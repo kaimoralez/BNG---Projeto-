@@ -1,0 +1,40 @@
+.about-main-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+
+.about-main-img {
+    width: 50%;
+}
+
+.about-main-img img{
+    width: 100%;
+}
+
+
+.about-main-content {
+    width: 50%;
+    text-align: center;
+}
+
+.about-main-content h1 {
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h1-size);
+    color: var(--color-secondary-black)
+}
+
+.about-main-content h4 {
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h4-size);
+    color: var(--color-secondary-black)
+}
+
+.about-main-content p {
+    font-size: var(--font-body-size);
+    font-family: var(--font-body);
+    font-weight: var(--fw-light);
+    color: var(--color-secondary-black);
+
+}

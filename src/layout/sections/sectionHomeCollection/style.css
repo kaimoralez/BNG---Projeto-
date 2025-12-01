@@ -1,0 +1,50 @@
+.collection-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 50px 0;
+    gap: 30px;
+    
+}
+.collection-section h2{
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h2-size);
+    font-family: var(--font-title);
+    color: var(--color-secondary-black);
+}
+
+.collection-container-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+}
+
+.card-grid{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap:20px
+}
+
+.card-grid-img{
+    width: 250px;
+    height: 350px;
+}
+
+
+.card-grid-description{
+    font-family: var(--font-body);
+    font-size: var(--font-button-size);
+    font-weight: var(--fw-regular);
+    color: var(--color-secondary-black);
+
+}
+.card-grid-price{
+    font-family: var(--font-body);
+    font-size: var(--font-button-size);
+    font-weight: var(--fw-light);
+    color: var(--color-secondary-black);
+
+}

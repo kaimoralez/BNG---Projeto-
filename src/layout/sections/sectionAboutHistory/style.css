@@ -1,0 +1,25 @@
+.section-about-history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px;
+    max-width: 818px; 
+    width: 100%; 
+    margin: 0 auto; 
+    gap: 15px;
+}
+
+.section-about-history h2 {
+    font-size: var(--font-headline-h2-size);
+    font-family: var(--font-title);
+    color: var(--color-secondary-black);
+}
+
+.section-about-paragraphs{
+    font-size: var(--font-body-size);
+    font-family: var(--font-body);
+    font-weight: var(--fw-light);
+    color: var(--color-secondary-black);
+}

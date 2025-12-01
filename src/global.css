@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+
+}
+
+:root {
+    /* COLORS */
+    --color-primary-olive: #283618;
+    --color-secondary-grey: #8E8E93;
+    --color-secondary-white: #FFFFFF;
+    --color-secondary-black: #000000;
+    --color-secondary-red: #FF0909;
+
+    /* FONT SIZES*/
+    --font-headline-h1-size: 70px;
+    --font-headline-h2-size: 48px;
+    --font-headline-h3-size: 30px;
+    --font-headline-h4-size: 24px;
+    --font-body-size: 16px;
+    --font-button-size: 16px;
+    --font-description-size: 16px;
+
+    /* FONT FAMILY */
+    --font-title: "Playfair", serif;
+    --font-body: "Poppins", sans-serif;
+
+    /* FONT WEIGHTS */
+    --fw-extralight: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+}

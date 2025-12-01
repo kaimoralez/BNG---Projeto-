@@ -1,0 +1,25 @@
+.btn-primary {
+
+        padding: 10px 24px;
+        border: 1px solid var(--color-secondary-black);
+        border-radius: 30px;
+        font-family: var(--font-body);
+        background-color: transparent;
+        font-weight: var(--fw-light);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        color: var(--color-secondary-black);
+        transition: all 1s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--color-secondary-black);
+        color: var(--color-secondary-white);
+    }
+
+    .highlight {
+        color: var(--color-primary-olive);
+        font-weight: var(--fw-bold);
+    }

@@ -1,0 +1,29 @@
+.ecobag-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 30px;
+}
+
+.ecobag-content {
+    gap: 15px;
+    text-align: center;
+}
+
+.ecobag-content h2 {
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h2-size);
+    color: var(--color-secondary-black);
+
+}
+
+.ecobag-content p {
+    font-family: var(--font-body);
+    font-size: var(--font-button-size);
+    font-weight: var(--fw-regular);
+    color: var(--color-secondary-black);
+}
+
+

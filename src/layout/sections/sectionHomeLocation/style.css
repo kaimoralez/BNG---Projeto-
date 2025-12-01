@@ -1,0 +1,52 @@
+.location-section{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap:25px;
+}
+
+.location-content{
+    text-align: center;
+}
+
+.location-content h2{
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h2-size);
+    font-family: var(--font-title);
+    color: var(--color-secondary-black);
+}
+
+.location-content h4{
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h4-size);
+    font-family: var(--font-title);
+    color: var(--color-secondary-black);
+}
+
+.location-content p{
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    color: var(--color-secondary-black);
+}
+
+
+.location-img{
+    width: 50%;
+}
+
+.location-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
