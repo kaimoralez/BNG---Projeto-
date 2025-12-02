@@ -1,10 +1,10 @@
 import './style.css'
-import aboutMainImg from '../../../assets/img/page-about/about-intro-section/about-img.svg'
+import aboutMainImg from '../../../assets/img/pageAbout/aboutIntro/about-img.svg'
 
 export const SectionAboutMain = () =>{
 
     return(
-        <div className='about-main-section'>
+        <section className='about-main-section'>
             <div className='about-main-img'>
                 <img src={aboutMainImg} alt="studio-bng" />
             </div>
@@ -17,7 +17,7 @@ export const SectionAboutMain = () =>{
 
 
 
-        </div>
+        </section>
 
     )
 }

@@ -6,27 +6,21 @@ export const SectionHomeCollection = () => {
     {
       id: 1,
       imagem: "https://i.postimg.cc/cHCwhKg5/Blazer-Estruturado.png",
-      nome: "Blazer Estruturado Oversized em Tweed Mescla Cinza",
+      nome: "Blazer Estruturado Oversized",
       preco: "R$ 90,00"
       
     },
     {
       id: 2,
       imagem: "https://i.postimg.cc/zBvK7Lb6/Camisa-Manga-Curta-Estampada.png",
-      nome: "Camisa Manga Curta Estampada Geométrico Retrô",
+      nome: "Camisa Estampada Geométrico Retrô",
       preco: "R$ 45,00"
     },
     {
       id: 3,
       imagem: "https://i.postimg.cc/B6bHp8L7/Calca-Cargo-de-Nylon-Parachute.png",
-      nome: "Calça Cargo de Nylon Parachute Cinza com Cós",
+      nome: "Calça Cargo de Nylon Parachute",
       preco: "R$ 85,00",
-    },
-    {
-      id: 4,
-      imagem: "https://i.postimg.cc/SsRCdX25/Bota-Coturno-em-Couro-Genuino.png",
-      nome: "Bota Coturno em Couro Genuíno Marrom Escuro",
-      preco: "R$ 120,00",
     }
   ];
 
@@ -34,7 +28,7 @@ export const SectionHomeCollection = () => {
     return(
         <>
         
-            <div className='collection-section'>
+            <section className='collection-section'>
                 <h2>COLEÇÃO</h2>
                 <div className="collection-container-grid">
                 {produtosCollection.map((i) => (
@@ -48,7 +42,7 @@ export const SectionHomeCollection = () => {
                 
                 </div>
                 <Button>Ver mais</Button>
-            </div>
+            </section>
             
         </>
        

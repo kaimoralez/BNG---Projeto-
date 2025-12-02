@@ -3,7 +3,7 @@ import './style.css'
 export const SectionAboutHistory = () => {
     return (
 
-        <div className='section-about-history'>
+        <section className='section-about-history'>
             <h2>NOSSA HISTÓRIA</h2>
 
             <div className='section-about-paragraphs'>
@@ -13,7 +13,7 @@ export const SectionAboutHistory = () => {
 
                 <p>A BNG representa isso: Beleza no que já existe, Natureza em nossas escolhas, Garbo em cada detalhe. Aqui, cada peça é pensada, fotografada e apresentada com carinho, para que você encontre não apenas um produto, mas um pedaço de história que combina com a sua.</p>
             </div>
-        </div>
+        </section>
 
     )
 }

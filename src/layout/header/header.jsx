@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import './style.css'
-import logo from '../../assets/img/logo-bng/logo-BNG-header.svg'
+import logo from '../../assets/img/logoBNG/logo-BNG-header.svg'
 import lupa from '../../assets/img/icons/icons-header/lupa-icon.svg'
-import shop from '../../assets/img/icons/icons-header/shop-icon.svg'
+
 
 
 export const Header = () => {
@@ -20,9 +20,8 @@ export const Header = () => {
                 </ul>
 
             </nav>
-            <div className='nav-icons'>
+            <div className='nav-icon'>
                 <img src={lupa} alt="logo bng" />
-                <img src={shop} alt="logo bng" />
             </div>
 
 

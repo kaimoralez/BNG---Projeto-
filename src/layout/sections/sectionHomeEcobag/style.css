@@ -26,4 +26,12 @@
     color: var(--color-secondary-black);
 }
 
+.ecobag-container-img{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 400px;
+    height: 600px;
+}
+
 

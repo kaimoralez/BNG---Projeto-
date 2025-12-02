@@ -9,7 +9,5 @@ export const MainHome = () => {
                 <p>Take the vision</p>
             </div>
         </main>
-
-
     )
 }

@@ -18,6 +18,9 @@
 }
 
 .section-about-paragraphs{
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
     font-size: var(--font-body-size);
     font-family: var(--font-body);
     font-weight: var(--fw-light);

@@ -1,4 +1,4 @@
-import labelBNG from '../../../assets/img/sectionAbout/img-about.svg'
+import labelBNG from '../../../assets/img/pageHome/sectionAbout/img-about.svg'
 import { Button } from '../../../components/Button/Button'
 import './style.css'
 

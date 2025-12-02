@@ -1,4 +1,4 @@
-import imgLocation from '../../../assets/img/sectionLocation/img-location.svg'
+import imgLocation from '../../../assets/img/pageHome/sectionLocation/img-location.svg'
 import { Button } from '../../../components/Button/Button'
 import './style.css'
 
