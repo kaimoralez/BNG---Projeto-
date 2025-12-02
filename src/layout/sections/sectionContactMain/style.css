@@ -30,7 +30,7 @@
     color: var(--color-secondary-black)
 }
 
-.contact-container-info ul li{
+.contact-container-info ul{
     list-style: none;
     font-size: var(--font-body-size);
     font-family: var(--font-body);

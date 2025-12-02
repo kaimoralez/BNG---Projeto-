@@ -1,4 +1,4 @@
-.collection-section{
+.home-collection-section{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -8,43 +8,16 @@
     gap: 40px;
     
 }
-.collection-section h2{
+.home-collection-section h2{
     font-family: var(--font-title);
     font-size: var(--font-headline-h2-size);
     font-family: var(--font-title);
     color: var(--color-secondary-black);
 }
 
-.collection-container-grid{
+.home-collection-container-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 100px;
 }
 
-.card-grid{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    gap:20px
-}
-
-.card-grid-img{
-    width: 350px;
-    height: 550px;
-}
-
-
-.card-grid-description{
-    font-family: var(--font-body);
-    font-size: var(--font-button-size);
-    font-weight: var(--fw-regular);
-    color: var(--color-secondary-black);
-
-}
-.card-grid-price{
-    font-family: var(--font-body);
-    font-size: var(--font-button-size);
-    font-weight: var(--fw-light);
-    color: var(--color-secondary-black);
-
-}

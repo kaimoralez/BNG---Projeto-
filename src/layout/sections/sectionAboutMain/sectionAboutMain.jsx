@@ -4,7 +4,7 @@ import aboutMainImg from '../../../assets/img/pageAbout/aboutIntro/about-img.svg
 export const SectionAboutMain = () =>{
 
     return(
-        <section className='about-main-section'>
+        <main className='about-main-section'>
             <div className='about-main-img'>
                 <img src={aboutMainImg} alt="studio-bng" />
             </div>
@@ -17,7 +17,7 @@ export const SectionAboutMain = () =>{
 
 
 
-        </section>
+        </main>
 
     )
 }

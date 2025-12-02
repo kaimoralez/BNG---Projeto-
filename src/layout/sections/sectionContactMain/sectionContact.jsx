@@ -5,7 +5,7 @@ export const SectionContact = () => {
     return (
 
 
-        <div className='contact-section'>
+        <main className='contact-section'>
 
             <div className='contact-container-intro'>
                 <h1>CONTATO</h1>
@@ -36,7 +36,7 @@ export const SectionContact = () => {
                 
             </div>
 
-        </div>
+        </main>
 
 
     )

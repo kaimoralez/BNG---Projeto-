@@ -1,0 +1,27 @@
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 20px
+}
+
+.card-grid-img {
+    width: 350px;
+    height: 550px;
+}
+
+.card-grid-description {
+    font-family: var(--font-body);
+    font-size: var(--font-button-size);
+    font-weight: var(--fw-regular);
+    color: var(--color-secondary-black);
+
+}
+
+.card-grid-price {
+    font-family: var(--font-body);
+    font-size: var(--font-button-size);
+    font-weight: var(--fw-light);
+    color: var(--color-secondary-black);
+
+}
