@@ -1,0 +1,35 @@
+.collection-menu {
+    background-image: url(../../../assets/img/pageCatalogo/collection-background-img.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    height: 180px;
+    background-size: cover;
+}
+
+.collection-menu-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.collection-menu-content h1 {
+    font-size: var(--font-headline-h1-size);
+    color: var(--color-secondary-white);
+    font-family: var(--font-title);
+}
+
+.collection-menu-content nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.collection-menu-content nav ul li {
+    color: var(--color-secondary-white);
+    font-size: var(--font-body-size);
+    font-family: var(--font-body);
+}

@@ -1,6 +1,6 @@
 import { Footer } from "../../layout/footer/footer"
 import { Header } from "../../layout/header/header"
-import { SectionCollectionMain } from "../../layout/sections/sectionCollectionMain/sectionCollectionMain"
+import { SectionCollectionMenu } from "../../layout/sections/sectionCollectionMain/sectionCollectionMenu"
 
 
 export const Catalogo = () =>{
@@ -9,7 +9,7 @@ export const Catalogo = () =>{
 
         <>
         <Header />
-        <SectionCollectionMain />
+        <SectionCollectionMenu />
         <Footer />
         </>
        

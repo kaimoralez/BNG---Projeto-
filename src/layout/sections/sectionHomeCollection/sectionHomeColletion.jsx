@@ -1,5 +1,5 @@
 import './style.css'
-import { Button } from '../../../components/Button/Button'
+import { Button } from '../../../components/Button/button';
 import { Card } from '../../../components/Card/card';
 
 export const SectionHomeCollection = () => {
@@ -25,7 +25,6 @@ export const SectionHomeCollection = () => {
   ];
 
   return (
-    <>
 
       <section className='home-collection-section'>
         <h2>COLEÇÃO</h2>
@@ -40,8 +39,6 @@ export const SectionHomeCollection = () => {
         </div>
         <Button>Ver mais</Button>
       </section>
-
-    </>
 
 
   )
