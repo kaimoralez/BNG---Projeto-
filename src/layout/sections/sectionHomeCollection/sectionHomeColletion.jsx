@@ -1,5 +1,5 @@
 import './style.css'
-import { Button } from '../../../components/Button/button';
+import { ButtonTemplate } from '../../../components/Button/button';
 import { Card } from '../../../components/Card/card';
 
 export const SectionHomeCollection = () => {
@@ -37,7 +37,7 @@ export const SectionHomeCollection = () => {
             />
           ))}
         </div>
-        <Button>Ver mais</Button>
+        <ButtonTemplate>Ver mais</ButtonTemplate>
       </section>
 
 

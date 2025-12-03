@@ -1,6 +1,6 @@
 import './style.css'
 
-export const Button = ({ children }) =>{
+export const ButtonTemplate = ({ children }) =>{
     
     return(
         <button className='btn-primary'>{children}</button>

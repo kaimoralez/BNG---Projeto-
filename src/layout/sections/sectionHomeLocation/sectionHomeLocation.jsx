@@ -1,5 +1,5 @@
 import imgLocation from '../../../assets/img/pageHome/sectionLocation/img-location.svg'
-import { Button } from '../../../components/Button/Button'
+import { ButtonTemplate } from '../../../components/Button/Button'
 import './style.css'
 
 
@@ -16,7 +16,7 @@ export const SectionHomeLocation = () => {
                     <p>Shopping Páteo das Artes — Lojas 10/11<br />
                         Praça da Cultura, 45 — São Paulo</p>
                 </div>
-                <Button>Ver no mapa</Button>
+                <ButtonTemplate>Ver no mapa</ButtonTemplate>
                 
             </div>
 

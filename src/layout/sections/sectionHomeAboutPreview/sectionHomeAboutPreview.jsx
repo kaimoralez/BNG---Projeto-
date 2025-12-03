@@ -1,5 +1,5 @@
 import labelBNG from '../../../assets/img/pageHome/sectionAbout/img-about.svg'
-import { Button } from '../../../components/Button/Button'
+import { ButtonTemplate } from '../../../components/Button/button'
 import './style.css'
 
 export const SectionHomeAboutPreview = () => {
@@ -16,7 +16,7 @@ export const SectionHomeAboutPreview = () => {
                     <p>A <span className='highlight'>BNG</span> une sustentabilidade e estilo em um só propósito: <span className='highlight'>dar nova vida à moda</span>.</p>
                 </div>
     
-                <Button onClick={() => console.log('Botão funcionando')}>Saiba mais</Button>
+                <ButtonTemplate onClick={() => console.log('Botão funcionando')}>Saiba mais</ButtonTemplate>
 
             </div>
         </section>
