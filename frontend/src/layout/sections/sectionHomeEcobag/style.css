@@ -1,0 +1,37 @@
+.ecobag-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+}
+
+.ecobag-content {
+    gap: 15px;
+    text-align: center;
+}
+
+.ecobag-content h2 {
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h2-size);
+    color: var(--color-secondary-black);
+
+}
+
+.ecobag-content p {
+    font-family: var(--font-body);
+    font-size: var(--font-button-size);
+    font-weight: var(--fw-regular);
+    color: var(--color-secondary-black);
+}
+
+.ecobag-container-img{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 400px;
+    height: 600px;
+}
+
+
