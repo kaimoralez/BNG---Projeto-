@@ -6,11 +6,11 @@ class adminController{
         res.json({message: "Listar produtos"})
     }
 
-    static async listarProdutosFeminos(req,res){
-        let produtos = await Produtos.findAll()
-        // res.json({message: "Listar produtos"})
-        res.json(produtos) 
-    }
+    // static async listarProdutosFeminos(req,res){
+    //     let produtos = await Produtos.findAll()
+    //     // res.json({message: "Listar produtos"})
+    //     res.json(produtos) 
+    // }
 
     static async CadastrarNovoProduto(req,res){
         try{

@@ -1,0 +1,48 @@
+.section-collection-female{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    
+}
+
+.section-collection-female h2{
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h2-size);
+    font-family: var(--font-title);
+
+}
+.card-grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    column-gap: 100px;
+    row-gap: 50px;
+    align-items: center;
+}
+
+.card{
+    width: 350px;
+    gap: 20px;
+    text-align: center;
+}
+
+.card-img {
+    width: 350px;
+    height: 550px;
+}
+
+.card-description {
+    font-family: var(--font-body);
+    font-size: var(--font-button-size);
+    font-weight: var(--fw-regular);
+    color: var(--color-secondary-black);
+
+}
+
+.card-price {
+    font-family: var(--font-body);
+    font-size: var(--font-button-size);
+    font-weight: var(--fw-light);
+    color: var(--color-secondary-black);
+
+}
