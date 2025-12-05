@@ -39,7 +39,5 @@ export const SectionHomeCollection = () => {
         </div>
         <ButtonTemplate>Ver mais</ButtonTemplate>
       </section>
-
-
   )
 }

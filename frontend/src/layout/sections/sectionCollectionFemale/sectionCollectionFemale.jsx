@@ -7,7 +7,7 @@ import { ButtonTemplate } from '../../../components/Button/button'
 
 export const SectionCollectionFemale = () => {
 
-    const produtosCollection = [
+    const productsCollectionFemale = [
         {
             id: 1,
             imagem: "https://i.postimg.cc/cHCwhKg5/Blazer-Estruturado.png",
@@ -36,9 +36,10 @@ export const SectionCollectionFemale = () => {
 
 
     const [open, setOpen] = useState(false)
+    const [productSelected, setProductSelected] = useState(null)
 
-    const abrirModal = () => {
-
+    const abrirModal = (i) => {
+        setProductSelected(i)
         setOpen(true)
     }
 
@@ -52,17 +53,21 @@ export const SectionCollectionFemale = () => {
         <>
             <section className='section-collection-female'>
                 <h2>Feminino</h2>
-                <div className='card-grid'>
-                    {produtosCollection.map((i) => (
+                <div className='card-grid-section-colletion-female'>
+                    {productsCollectionFemale.map((i) => (
 
-                        
-                            <div className='card'>
-                                <img src={i.imagem} alt="" className='card-img'/>
-                                <p className='card-description'>{i.nome}</p>
-                                <p className='card-price'>{i.preco}</p>
-                                <ButtonTemplate onClick={() => abrirModal()}>Ver detalhes</ButtonTemplate>
+                            <div className="card-wrapper-section-collection-female">
+                                <div className='card-section-colletion-female' key={i.id}>
+                                    <img src={i.imagem} alt="" className='card-img-section-colletion-female'/>
+                                    <div className='card-text-section-colletion-female'>
+                                        <p className='card-description-section-colletion-female'>{i.nome}</p>
+                                        <p className='card-price-section-colletion-female'>{i.preco}</p>
+                                    </div>
+                                    
+                                </div>
+                                <ButtonTemplate onClick={() => abrirModal(i)}>Ver detalhes</ButtonTemplate>
                             </div>
-                        
+
                     ))}
 
                 </div>
@@ -70,7 +75,7 @@ export const SectionCollectionFemale = () => {
                 
 
             </section>
-            <ModalCatalago open={open} close={fecharModal} />
+            <ModalCatalago open={open} close={fecharModal} product={productSelected} />
         </>
 
 
