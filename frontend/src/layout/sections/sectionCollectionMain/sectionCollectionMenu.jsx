@@ -18,6 +18,7 @@ export const SectionCollectionMenu = () => {
                         <li>Feminino</li>
                         <li>Masculino</li>
                         <li>Infantil</li>
+                        <li>Ecobag</li>
                     </ul>
     
                 </nav>

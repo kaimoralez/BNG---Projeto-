@@ -21,3 +21,11 @@
     gap: 100px;
 }
 
+.card-wrapper-section-home-collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+

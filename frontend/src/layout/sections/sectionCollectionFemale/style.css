@@ -12,11 +12,11 @@
     font-family: var(--font-title);
 
 }
-.card-grid-section-colletion-female{
+.grid-card-section-colletion-female{
     display: grid;
-    grid-template-columns:repeat(3,1fr);
-    column-gap: 100px;
-    row-gap: 50px;
+    grid-template-columns:repeat(3,minmax(350px, max-content));
+    gap:100px;
+    justify-content: center;
 }
 
 .card-wrapper-section-collection-female{
@@ -26,29 +26,3 @@
     gap: 20px;
 }
 
-.card-section-colletion-female{
-    display: flex;
-    width: 350px;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-}
-
-.card-img-section-colletion-female {
-    width: 350px;
-    height: 550px;
-}
-
-.card-description-section-colletion-female {
-    font-family: var(--font-body);
-    font-size: var(--font-button-size);
-    font-weight: var(--fw-regular);
-    color: var(--color-secondary-black);
-}
-
-.card-price-section-colletion-female {
-    font-family: var(--font-body);
-    font-size: var(--font-button-size);
-    font-weight: var(--fw-light);
-    color: var(--color-secondary-black)
-}

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ModalCatalago } from '../../../components/Modal/modal'
 import './style.css'
 import { ButtonTemplate } from '../../../components/Button/button'
+import { Card } from '../../../components/Card/card'
 
 
 
@@ -53,19 +54,17 @@ export const SectionCollectionFemale = () => {
         <>
             <section className='section-collection-female'>
                 <h2>Feminino</h2>
-                <div className='card-grid-section-colletion-female'>
+                <div className='grid-card-section-colletion-female'>
                     {productsCollectionFemale.map((i) => (
 
                             <div className="card-wrapper-section-collection-female">
-                                <div className='card-section-colletion-female' key={i.id}>
-                                    <img src={i.imagem} alt="" className='card-img-section-colletion-female'/>
-                                    <div className='card-text-section-colletion-female'>
-                                        <p className='card-description-section-colletion-female'>{i.nome}</p>
-                                        <p className='card-price-section-colletion-female'>{i.preco}</p>
-                                    </div>
-                                    
-                                </div>
-                                <ButtonTemplate onClick={() => abrirModal(i)}>Ver detalhes</ButtonTemplate>
+                                <Card key ={i.id}
+                                imagem = {i.imagem}
+                                nome = {i.nome}
+                                preco= {i.preco}
+                                onClick={() => abrirModal(i)}
+                                />
+                                
                             </div>
 
                     ))}

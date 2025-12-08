@@ -30,7 +30,9 @@
 }
 
 .container-item{
-    gap:30px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
 }
 
 .title-content-modal{

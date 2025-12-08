@@ -26,12 +26,11 @@
     color: var(--color-secondary-black);
 }
 
-.ecobag-container-img{
+
+.ecobag-container-card {
     display: flex;
     justify-content: center;
     gap: 80px;
     width: 400px;
-    height: 600px;
+
 }
-
-

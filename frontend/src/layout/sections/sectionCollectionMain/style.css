@@ -25,7 +25,7 @@
 .collection-menu-content nav ul {
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 30px;
 }
 
 .collection-menu-content nav ul li {
