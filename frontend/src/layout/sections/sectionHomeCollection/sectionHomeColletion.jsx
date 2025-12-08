@@ -3,6 +3,7 @@ import { ButtonTemplate } from '../../../components/Button/button';
 import { Card } from '../../../components/Card/card';
 import { useState } from 'react';
 import { ModalCatalago } from '../../../components/Modal/modal';
+import { Link } from 'react-router-dom';
 
 export const SectionHomeCollection = () => {
   const produtosCollection = [
@@ -58,9 +59,9 @@ export const SectionHomeCollection = () => {
 
         ))}
       </div>
-      <ButtonTemplate>Ver mais</ButtonTemplate>
+      <ButtonTemplate to={"/catalogo"}>Ver mais</ButtonTemplate>
 
-      <ModalCatalago open={(open)} close={(fecharModal)} product={productSelected} />
+      <ModalCatalago open={open} close={fecharModal} product={productSelected} />
     </section>
 
   )

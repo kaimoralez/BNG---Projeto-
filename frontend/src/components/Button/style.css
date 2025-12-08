@@ -12,6 +12,7 @@
         z-index: 1;
         color: var(--color-secondary-black);
         transition: all 1s ease;
+        text-decoration: none;
     }
 
     .btn-primary:hover {
@@ -19,7 +20,4 @@
         color: var(--color-secondary-white);
     }
 
-    .highlight {
-        color: var(--color-primary-olive);
-        font-weight: var(--fw-bold);
-    }
+    

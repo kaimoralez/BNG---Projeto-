@@ -16,7 +16,7 @@ export const SectionHomeAboutPreview = () => {
                     <p>A <span className='highlight'>BNG</span> une sustentabilidade e estilo em um só propósito: <span className='highlight'>dar nova vida à moda</span>.</p>
                 </div>
     
-                <ButtonTemplate onClick={() => console.log('Botão funcionando')}>Saiba mais</ButtonTemplate>
+                <ButtonTemplate to={"/sobre"}>Saiba mais</ButtonTemplate>
 
             </div>
         </section>

@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
 import logoBNG from '../../assets/img/footer/footer-img.svg'
 import './style.css'
+
 export const Footer = () => {
     return (
 
@@ -11,10 +13,11 @@ export const Footer = () => {
                     <h4>MENU ALTERNATIVO</h4>
                     <nav>
                         <ul>
-                            <li>INÍCIO</li>
-                            <li>CATÁLOGO</li>
-                            <li>SOBRE</li>
-                            <li>CONTATOS</li>
+                            <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            >INÍCIO</Link></li>
+                            <li><Link to="/catalogo">CATÁLOGO</Link></li>
+                            <li><Link to="/sobre">SOBRE</Link></li>
+                            <li><Link to="/contato">CONTATOS</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -23,10 +26,18 @@ export const Footer = () => {
                     <h4>REDES SOCIAIS</h4>
                     <nav>
                         <ul>
-                            <li>INSTAGRAM</li>
-                            <li>FACEBOOK</li>
-                            <li>WHATSAPP</li>
-                            <li>X</li>
+                            <li><a href="https://instagram.com"
+                                target="_blank"
+                                rel="noopener noreferrer">INSTAGRAM</a></li>
+                            <li><a href="https://facebook.com"
+                                target="_blank"
+                                rel="noopener noreferrer">FACEBOOK</a></li>
+                            <li><a href="https://whatsapp.com"
+                                target="_blank"
+                                rel="noopener noreferrer">WHATSAPP</a></li>
+                            <li><a href="https://x.com"
+                                target="_blank"
+                                rel="noopener noreferrer">X</a></li>
                         </ul>
                     </nav>
                 </div>

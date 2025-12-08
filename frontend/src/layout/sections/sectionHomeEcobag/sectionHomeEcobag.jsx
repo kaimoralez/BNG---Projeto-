@@ -60,7 +60,7 @@ export const SectionHomeEcobag = () => {
                 ))}
 
             </div>
-            <ButtonTemplate>Conheça as Ecobags</ButtonTemplate>
+            <ButtonTemplate to={"/catalogo"}>Conheça as Ecobags</ButtonTemplate>
 
             <ModalCatalago open={open} close={fecharModal} product={productSelected} />
         </section>

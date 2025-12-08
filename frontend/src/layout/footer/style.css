@@ -36,10 +36,16 @@ footer {
 .footer-menu-alternative nav ul li {
     font-size: var(--font-body-size);
     list-style: none;
-    color: var(--color-secondary-white);
     font-family: var(--font-body);
     font-weight: var(--fw-light);
 }
+
+.footer-menu-alternative nav ul li a{
+    text-decoration: none;
+     color: var(--color-secondary-white);
+}
+
+
 
 
 .footer-social-media {
@@ -61,6 +67,11 @@ footer {
     color: var(--color-secondary-white);
     font-family: var(--font-body);
     font-weight: var(--fw-light);
+}
+
+.footer-social-media nav ul li a {
+    text-decoration: none;
+    color: var(--color-secondary-white);
 }
 
 .footer-brand {

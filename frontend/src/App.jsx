@@ -5,6 +5,7 @@ import { Catalogo } from './pages/catalogo/catalogo'
 import { About } from './pages/about/about'
 import { Contato } from './pages/contato/contato'
 import { ScrollToTop } from './components/ScrollToTop/scrollToTop'
+import { PageNotFound } from './pages/pageNotFound/pageNotFound'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/catalogo' element={<Catalogo/>}/> 
         <Route path='/sobre' element={<About/>}/>
         <Route path='/contato' element={<Contato/>}/> 
+        <Route path='*' element={<PageNotFound/>}/>
       </Routes>
       </BrowserRouter>
     </>

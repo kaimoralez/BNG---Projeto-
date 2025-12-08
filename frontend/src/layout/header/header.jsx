@@ -1,6 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
 import './style.css'
-import logo from '../../assets/img/logoBNG/logo-BNG-header.svg'
 import lupa from '../../assets/img/icons/icons-header/lupa-icon.svg'
 import { useEffect, useState } from 'react'
 
@@ -33,7 +32,7 @@ export const Header = () => {
     return (
         <header className={scrolled  ? "header scrolled" : "header"}>
 
-            <p className='BNG-logo-header'>BNG</p>
+            <p className='BNG-logo-header'><Link to="/">BNG</Link></p>
 
             <nav className='nav-header'>
                 <ul>
