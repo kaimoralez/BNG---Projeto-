@@ -16,6 +16,11 @@ const Produtos = conexao.define('produtos', {
     tamanho: {
         type: DataTypes.STRING
     },
+    genero: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        defaultValue: 'Unissex'
+    },
     img_1: {
         type: DataTypes.STRING
     },
@@ -29,14 +34,14 @@ const Produtos = conexao.define('produtos', {
         type: DataTypes.STRING
     },
     descricao: {
-        type: DataTypes.STRING
+        type: DataTypes.TEXT
     }
 }, {
     timestamps: false
-    
+
 })
 
-Produtos.sync()
+Produtos.sync({alter: true})
 
 module.exports = Produtos;
 

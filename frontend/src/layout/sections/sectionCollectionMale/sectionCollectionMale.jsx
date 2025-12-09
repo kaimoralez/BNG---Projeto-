@@ -5,9 +5,10 @@ import { Card } from '../../../components/Card/card'
 import axios from 'axios'
 
 
-export const SectionCollectionFemale = () => {
 
-    const [productsCollectionFemale, setProductsCollectionFemale] = useState([])
+export const SectionCollectionMale = () => {
+
+    const [productsCollectionMale, setProductsCollectionMale] = useState([])
     const [open, setOpen] = useState(false)
     const [productSelected, setProductSelected] = useState(null)
 
@@ -24,8 +25,8 @@ export const SectionCollectionFemale = () => {
         axios.get('http://localhost:8081/')
         .then(response => {
             console.log(response.data)
-            const femaleProducts = response.data.filter(prod => prod.genero === 'Feminino')
-            setProductsCollectionFemale(femaleProducts)
+            const maleProducts = response.data.filter(prod => prod.genero === 'Masculino')
+            setProductsCollectionMale(maleProducts)
         })
         .catch(error => {
             console.error('Erro ao buscar produtos:', error)
@@ -35,12 +36,12 @@ export const SectionCollectionFemale = () => {
 
     return (
         <>
-            <section className='section-collection-female'>
-                <h2>Feminino</h2>
-                <div className='grid-card-section-colletion-female'>
-                    {productsCollectionFemale.map((i) => (
+            <section className='section-collection-male'>
+                <h2>Masculino</h2>
+                <div className='grid-card-section-colletion-male'>
+                    {productsCollectionMale.map((i) => (
 
-                            <div className="card-wrapper-section-collection-female">
+                            <div className="card-wrapper-section-collection-male">
                                 <Card key ={i.id}
                                 imagem = {i.img_1}
                                 nome = {i.nome}

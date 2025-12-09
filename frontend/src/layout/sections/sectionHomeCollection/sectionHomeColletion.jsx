@@ -1,32 +1,31 @@
 import './style.css'
 import { ButtonTemplate } from '../../../components/Button/button';
 import { Card } from '../../../components/Card/card';
-import { useState } from 'react';
-import { ModalCatalago } from '../../../components/Modal/modal';
+import { useEffect, useState } from 'react';
+import { ModalCatalago } from '../../../components/ModalCatalalogo/modalCatalogo';
 import { Link } from 'react-router-dom';
+import axios from 'axios'
 
 export const SectionHomeCollection = () => {
-  const produtosCollection = [
-    {
-      id: 1,
-      imagem: "https://i.postimg.cc/cHCwhKg5/Blazer-Estruturado.png",
-      nome: "Blazer Estruturado Oversized",
-      preco: "R$ 90,00"
-    },
-    {
-      id: 2,
-      imagem: "https://i.postimg.cc/zBvK7Lb6/Camisa-Manga-Curta-Estampada.png",
-      nome: "Camisa Estampada Geométrico Retrô",
-      preco: "R$ 45,00"
-    },
-    {
-      id: 3,
-      imagem: "https://i.postimg.cc/B6bHp8L7/Calca-Cargo-de-Nylon-Parachute.png",
-      nome: "Calça Cargo de Nylon Parachute",
-      preco: "R$ 85,00"
-    }
-  ];
 
+  const [products, setProducts] = useState([])
+
+  const idsDesejados = [2, 4, 3];
+
+  useEffect(() => {
+    axios.get('http://localhost:8081/')
+      .then(res => {
+        console.log(res.data)
+        setProducts(res.data)
+      })
+      .catch(error => {
+        console.error('Erro ao buscar produtos:', error)
+      })
+  }, []);
+
+  const produtosFiltrados = products.filter(i =>
+    idsDesejados.includes(i.id)
+  )
 
   const [open, setOpen] = useState(false)
   const [productSelected, setSelectedProduct] = useState(null)
@@ -45,11 +44,11 @@ export const SectionHomeCollection = () => {
     <section className='home-collection-section'>
       <h2>COLEÇÃO</h2>
       <div className="home-collection-container-grid">
-        {produtosCollection.map((i) => (
+        {produtosFiltrados.map((i) => (
           <div className='card-wrapper-section-home-collection'>
 
             <Card key={i.id}
-              imagem={i.imagem}
+              imagem={i.img_1}
               nome={i.nome}
               preco={i.preco}
               onClick={() => abriModal(i)}

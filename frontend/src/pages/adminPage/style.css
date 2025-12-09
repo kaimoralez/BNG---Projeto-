@@ -1,0 +1,23 @@
+.section-pageAdmin{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-pageAdmin h1{
+    font-size: var(--font-headline-h1-size);
+    font-family: var(--font-title);
+    color: var( --color-secondary-black);
+}
+
+.grid-card-pageAdmin {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(350px, max-content));
+    gap: 50px;
+    justify-content: center;
+    padding: 30px;
+}

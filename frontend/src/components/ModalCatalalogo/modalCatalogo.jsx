@@ -1,36 +1,37 @@
-
-
-import { Box, Button, Modal } from '@mui/material'
+import { Modal } from '@mui/material'
 import './style.css'
-import illustration from '../../assets/illustration.svg'
 import { ButtonTemplate } from '../Button/button'
 
 
 
 export const ModalCatalago = ({ open, close, product }) => {
 
+    const whatsappLink = "https://www.whatsapp.com/"
     if (!product) return null
 
 
     return (
         <Modal open={open} onClose={close} className='modal'>
             <div className='container-modal'>
-                <img src={product.imagem} alt="imagem-bng" />
+                <img src={product.img_1 || product.imagem} alt="imagem-bng" />
 
                 <div className='container-content-modal'>
 
                     <div className='container-item'>
                         <div>
                             <p className='title-content-modal'>{product.nome}</p>
-                            <p className='description-content-modal'>{product.preco}</p>
+                            <p className='description-content-modal'>{Number(product.preco).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
                         </div>
 
                         <div>
-                            <p className='title-content-modal'>Tamanho</p>
+                            {product?.tamanho && (
+                                <p className='title-content-modal'>Tamanho</p>
+                            )}
                             <p className='description-content-modal'>{product.tamanho}</p>
                         </div>
-
-                        <ButtonTemplate>Entre em contato para comprar</ButtonTemplate>
+                        <div className='btn-template'>
+                            <ButtonTemplate href={whatsappLink} target="_blank">Entre em contato para comprar</ButtonTemplate>
+                        </div>
 
 
                         <div>
@@ -39,14 +40,9 @@ export const ModalCatalago = ({ open, close, product }) => {
                         </div>
                     </div>
 
-
                 </div>
 
-
-
-
             </div>
-
 
         </Modal>
 

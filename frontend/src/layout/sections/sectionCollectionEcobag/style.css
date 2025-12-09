@@ -1,0 +1,28 @@
+.section-collection-ecobag{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 15px;
+}
+
+.section-collection-ecobag h2{
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: var(--font-headline-h2-size);
+    font-family: var(--font-title);
+
+}
+.grid-card-section-colletion-ecobag{
+    display: grid;
+    grid-template-columns:repeat(3,minmax(350px, max-content));
+    gap:100px;
+    justify-content: center;
+}
+
+.card-wrapper-section-collection-ecobag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
